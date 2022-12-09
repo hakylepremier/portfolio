@@ -28,6 +28,7 @@ header{
     width: 100%;
     justify-content: center;
     z-index: 999;
+	/* opacity: 0; */
 }
 
 .navbar{
@@ -35,11 +36,61 @@ header{
     justify-content: space-between;
     padding:  1.875rem 0px;
     min-width: 38rem;
-
     /* position: fixed;
     width: 100%;
     z-index: 999;
      */
+}
+
+.nav-buttons {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	width: 38rem;
+}
+
+.toggle-button{
+	display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 30px;
+	width: 40px;
+	z-index: 2000;
+}
+
+.bar {
+	background-color: white;
+	height: 5px;
+	border-radius: 2px;
+}
+
+.search-button {
+	/* background-color: red; */
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2000;
+	transform: rotate(-30deg);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.search-lens {
+	height: 30px;
+	width: 30px;
+	border: 5px solid white;
+	border-radius: 20px;
+}
+
+.search-handle {
+	width: 5px;
+	height: 10px;
+	background-color: white;
+	border-radius: 2px;
 }
 
 nav ul{
@@ -66,13 +117,17 @@ nav ul a:hover{
     transition: all 0.06s ease;
 }
 
+/* .search-bar{
+	display: flex;
+} */
+
 .search-bar input[type="text"]{
     border: none;
     height: 1.875rem;
     border-radius: 4px;
     border: 2px solid #85D982;
     background-color: transparent;
-    padding: 0 10px;
+    padding: 0 0.41rem;
     color: white;
 }
 .search-bar input[type="text"]::placeholder{
@@ -94,7 +149,7 @@ nav ul a:hover{
 
 .main-copy{
     display: flex;
-    padding: 50px 0;
+    padding-bottom: 2.083rem;
     padding-top: 4.17rem;
 }
 
@@ -171,7 +226,7 @@ nav ul a:hover{
 .services{
     background-color: #323859;
     padding: 20px;
-    width: 11.25rem;
+    width: 30%;
     border-radius: 4px;
     position: relative;
     /* display: flex;
@@ -192,7 +247,7 @@ nav ul a:hover{
 }
 
 .services img{
-    width: 5rem;
+    width: 120px;
     stroke: #85D982;
     margin: 0 auto;
 }
@@ -214,13 +269,14 @@ nav ul a:hover{
     justify-content: center;
 }
 
-.project{
-    margin: 20
-    px;
+figure.project{
+	margin: 0;
+	padding: 0.833rem;
 }
 
+
 .project img{
-    width: 400px;
+    width: 16.67rem;
 }
 
 /* Testimonials */
