@@ -39,6 +39,8 @@
         display: block;
         width: 100%;
         text-align: center;
+		font-size: 24px;
+		font-weight: bold;
         /* padding: 10px 0; */
     }
 
@@ -48,6 +50,10 @@
         justify-content: center;
         /* margin-top: 60px; */
     }
+
+	.search-bar input[type="text"], .search-bar input[type="submit"]{
+		height: 40px;
+	}
 
     .header-copy, .header-me{
         /* font-size: 12px; */
@@ -90,6 +96,7 @@
 
 	.search-active{
 		display: flex;
+		padding-top: 10px;
 	}
 	
 	.nav-active{
