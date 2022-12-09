@@ -5,40 +5,119 @@
 	}
 }
 
-@media (max-width: 768px) {
-	html{
-		font-size: 10px;
+
+
+@media (max-width: 670px) {
+	.main-copy {
+        flex-direction: column;
+        align-items: center;
+		padding-top: 80px;
+    }
+
+	.navbar{
+		display: block;
+		width: 100%;
+		padding-top: 50px;
+	}
+
+	.search-button {
+		/* background-color: red; */
+		display: flex;
+	}
+
+	.toggle-button{
+		display: flex;
+	}
+
+	.nav-list{
+        display: none;
+        /* display: block; */
+        width: 100%;
+    }
+
+    .navbar nav a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        /* padding: 10px 0; */
+    }
+
+    .search-bar{
+        display: none;
+        /* display: flex; */
+        justify-content: center;
+        /* margin-top: 60px; */
+    }
+
+    .header-copy, .header-me{
+        /* font-size: 12px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+	.header-image {
+		width: 100%;
+	}
+	
+	.services{
+		width: 50%;
+		font-size: larger;
+		border-radius: 9px;
+		padding: 50px 20px;
+	}
+
+    .services-section h2, .services-section h3{
+        text-align: center;
+    }
+
+    .service-container, .testimonials-container, .projects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services, .testimonial, .project{
+        margin-bottom: 20px;
+    }
+
+    .testimonial-section p, .testimonial-section h2{
+        text-align: center;
+    }
+
+	.service-title, .service-copy{
+		text-align: center;
+	}
+
+	.search-active{
+		display: flex;
+	}
+	
+	.nav-active{
+		display: block;
+		height: 70px;
 	}
 }
 
 @media (max-width: 420px) {
-	html{
-		font-size: 12px;
-	}
-
-	
-	.box-container{
-		max-width: 36rem;
-		margin: auto;
-	}
-
-	.main-copy{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.service-container {
-		flex-direction: column;
-		align-items: center;
+	.services{
+		width: 90%;
+		margin-bottom: 30px;
+		padding: 50px 20px;
 	}
 
 	.projects-container {
 		flex-direction: column;
 	}
 
+
 	.testimonials-container {
 		flex-direction: column;
+		align-items: center;
 	}
+
+	.testimonial{
+		margin-bottom: 20px;
+	}
+
 }
 
